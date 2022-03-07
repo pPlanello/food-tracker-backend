@@ -6,10 +6,14 @@ Application dedicated to managing a food in database. So that the food does not 
 
 ## Start Project
 
-In a terminal:
+1. In a terminal:
 
 ```
 docker-compose up
 ```
-
-In a IntelliJ IDEA execute program
+> If your are windows use WSL
+> ```
+> wsl -d Ubuntu
+> ```
+> 
+2. In a IntelliJ IDEA execute program
