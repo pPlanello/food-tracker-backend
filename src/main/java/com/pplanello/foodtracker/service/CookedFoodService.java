@@ -28,4 +28,21 @@ public interface CookedFoodService {
      * @return {@link CookedFood} created
      */
     CookedFood createCookedFood(CookedFood cookedFood);
+
+    /**
+     * Update a cooked food
+     *
+     * @param cookedFood to update
+     * @param id         identifier of cooked food
+     * @return {@link CookedFood} updated
+     */
+    CookedFood updateCookedFood(CookedFood cookedFood, Long id);
+
+    /**
+     * Delete a cooked food
+     *
+     * @param id identifier of cooked food
+     * @return {@link Long} identifier
+     */
+    Long deleteCookedFood(Long id);
 }

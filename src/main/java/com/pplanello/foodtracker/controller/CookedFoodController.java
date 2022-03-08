@@ -34,7 +34,20 @@ public class CookedFoodController {
     }
 
     @PostMapping("")
+    @Operation(summary = "Create", description = "Create a cooked food")
     public ResponseEntity<CookedFood> createCookedFood(@RequestBody CookedFood cookedFood) {
         return new ResponseEntity<>(cookedFoodService.createCookedFood(cookedFood), HttpStatus.OK);
+    }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Update", description = "Update a cooked food")
+    public ResponseEntity<CookedFood> updateCookedFood(@PathVariable("id") @Parameter(name = "id", description = "Identifier of cooked food") Long id, @RequestBody CookedFood cookedFood) {
+        return new ResponseEntity<>(cookedFoodService.updateCookedFood(cookedFood, id), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Delete", description = "Delete a cooked food")
+    public ResponseEntity<Long> deleteCookedFood(@PathVariable("id") @Parameter(name = "id", description = "Identifier of cooked food") Long id) {
+        return new ResponseEntity<>(cookedFoodService.deleteCookedFood(id), HttpStatus.OK);
     }
 }
