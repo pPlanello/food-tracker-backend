@@ -1,0 +1,1 @@
+DROP TABLE cooked_food;

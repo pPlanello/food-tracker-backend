@@ -1,7 +1,14 @@
+# App data info
+app.info:
+  name: 'FoodTracker'
+  version: '1.0'
+  description: 'Application dedicated to managing a food in database. So that the food does not spoil in the fridge.'
+
 # Server
 server:
   port: '8080'
-  # Spring Boot Configuration
+
+# Spring Boot Configuration
 spring:
   jpa.database: 'POSTGRESQL'
   datasource:
@@ -9,10 +16,8 @@ spring:
     platform: 'postgres'
     username: 'postgres'
     password: 'postgres'
-  # Swagger
+  liquibase.change-log: 'classpath:db/db.changelog-master.xml'
+
+
+# Swagger
 springdoc.swagger-ui.path: '/swagger-ui.html'
-# App data info
-app.info:
-  name: 'FoodTracker'
-  version: '1.0'
-  description: 'Application dedicated to managing a food in database. So that the food does not spoil in the fridge.'
