@@ -18,14 +18,29 @@ repositories {
     mavenCentral()
 }
 
+// properties
+ext {
+    swaggerVersion = '1.6.6'
+    springfoxSwagger2Version = '3.0.0'
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-hateoas'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-parent:2.4.0'
+    // Swagger
+    implementation "org.springdoc:springdoc-openapi-ui:$swaggerVersion"
+
+
     compileOnly 'org.projectlombok:lombok'
+
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
     runtimeOnly 'org.postgresql:postgresql'
+
     annotationProcessor 'org.projectlombok:lombok'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

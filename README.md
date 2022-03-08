@@ -11,9 +11,17 @@ Application dedicated to managing a food in database. So that the food does not 
 ```
 docker-compose up
 ```
+
 > If your are windows use WSL
 > ```
 > wsl -d Ubuntu
 > ```
-> 
+>
+
 2. In a IntelliJ IDEA execute program
+
+# Swagger Doc
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
