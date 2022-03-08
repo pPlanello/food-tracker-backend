@@ -18,8 +18,8 @@ public class ProofController {
     @Autowired
     private ProofService proofService;
 
-    @Operation(summary = "", description = "")
     @GetMapping()
+    @Operation(summary = "proof sumary", description = "proof description")
     public ResponseEntity<String> getProof() {
         return new ResponseEntity<>(proofService.helloWorld(), HttpStatus.OK);
     }

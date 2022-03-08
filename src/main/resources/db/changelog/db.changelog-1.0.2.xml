@@ -4,9 +4,9 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
 
-    <changeSet id="food-tracker-changelog-1.0.1" author="pPlanello">
-        <sqlFile path="db/changelog/1.0.1/DROP_COOKED_FOOD_TABLE.sql" stripComments="true" splitStatements="true"/>
-        <sqlFile path="db/changelog/1.0.1/CREATE_COOKED_FOOD_TABLE.sql" stripComments="true" splitStatements="true"/>
+    <changeSet id="food-tracker-changelog-1.0.2" author="pPlanello">
+        <sqlFile path="db/changelog/1.0.2/DROP_COOKED_FOOD_TABLE.sql" stripComments="true" splitStatements="true"/>
+        <sqlFile path="db/changelog/1.0.2/CREATE_COOKED_FOOD_TABLE.sql" stripComments="true" splitStatements="true"/>
     </changeSet>
 
 </databaseChangeLog>

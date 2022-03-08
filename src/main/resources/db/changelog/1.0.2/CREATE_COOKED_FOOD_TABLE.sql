@@ -1,3 +1,6 @@
+-- JPA INCREMENT
+CREATE SEQUENCE hibernate_sequence START 1;
+
 -- TABLE
 CREATE TABLE cooked_food(
     id serial PRIMARY KEY,
